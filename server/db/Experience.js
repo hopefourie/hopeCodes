@@ -1,7 +1,7 @@
 const Sequelize = require('sequelize');
 const db = require('./database');
 
-const Post = db.define('post', {
+const Experience = db.define('experience', {
   title: {
     type: Sequelize.STRING,
     allowNull: false,
@@ -9,7 +9,14 @@ const Post = db.define('post', {
       notEmpty: true,
     },
   },
-  content: {
+  company: {
+    type: Sequelize.STRING,
+    allowNull: false,
+    validate: {
+      notEmpty: true,
+    },
+  },
+  description: {
     type: Sequelize.TEXT,
     allowNull: false,
     validate: {
@@ -18,4 +25,4 @@ const Post = db.define('post', {
   },
 });
 
-module.exports = Post;
+module.exports = Experience;
