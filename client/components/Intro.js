@@ -4,8 +4,6 @@ export default function Intro() {
   return (
     <div className="component">
       <div className="intro">
-        {/* link source to photo of me in this repo */}
-        <img />
         <div className="intro-text">
           <h2>Hello! I'm Hope Fourie, a full stack software engineer.</h2>
           <p>
@@ -14,14 +12,19 @@ export default function Intro() {
             design for TV and film. I loved being creative at work, but I missed
             being analytical. When I started learning JS for the first time, I
             knew I had found what I was looking for. I love the creative problem
-            solving aspect of coding. After a 17-week immersive coding bootcamp
-            at Fullstack Academy, I am looking a job that links my design
-            experience with my new engineering skills. I am excited to work on
-            projects that I enjoyed creating and that are making others’ lives
-            better. JavaScript | HTML5 | CSS | ReactJS | Redux | Express |
-            PostgreSQL
+            solving aspect of coding.
+          </p>
+          <p>
+            After a 17-week immersive coding bootcamp at Fullstack Academy, I am
+            looking a job that links my design experience with my new
+            engineering skills. I am excited to work on projects that I enjoyed
+            creating and that are making others’ lives better.
+          </p>
+          <p>
+            JavaScript | HTML5 | CSS | ReactJS | Redux | Express | PostgreSQL
           </p>
         </div>
+        <img src="./headshot.jpg" className="headshot" />
       </div>
     </div>
   );
