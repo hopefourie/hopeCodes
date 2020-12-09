@@ -95,23 +95,28 @@ nav {
   width: 50%;
   color: white;
 }
-.experienc-img {
-  max-width: 60px
+.experience-img {
+  max-height: 100px
 }
 .experience1 {
-  background-color: darkgray;
+  background-color: white;
   min-width: 400px;
   padding: 5px;
   margin: 20px;
   display:flex;
   flex-direction:row;
+  color: darkgray;
+  align-items: center;
+  text-align: right;
 }
 .experience2 {
-  background-color: darkgray;
+  background-color: white;
   padding: 5px;
   margin: 20px;
   display:flex;
   flex-direction:row;
+  align-items: center;
+  color: darkgray;
 }
 .interests {
   border: 3px solid #ecc5c4;
