@@ -5,6 +5,7 @@ export default function Projects() {
     <div className="component">
       <div
         className="projects"
+        id="projects"
         data-aos="fade-up"
         data-aos-duration="2000"
         data-aos-once="true"

@@ -5,6 +5,7 @@ export default function Experience() {
     <div className="component">
       <div
         className="experiences"
+        id="experience"
         data-aos="fade-up"
         data-aos-duration="2000"
         data-aos-once="true"
