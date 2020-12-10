@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 
 export default function Header() {
   return (
-    <div className="header">
+    <div className="header" data-aos="fade-down" data-aos-duration="2000">
       <h1>Hope Fourie</h1>
       <nav>
         {/* add links to # navigations */}

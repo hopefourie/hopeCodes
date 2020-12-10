@@ -12,9 +12,14 @@ h1 {
   color: black;
 }
 h2 {
-  margin: 0px;
+  margin: 20px 0px 20px 0px;
   font-family: 'Raleway', Sans-Serif;
   font-size: 34px;
+  color: rgb(118, 118, 118);
+}
+h3 {
+  color: #ecc5c4;
+  font-size: 24px;
 }
 p {
   font-size: 16px;
@@ -22,6 +27,7 @@ p {
 .link {
   color: black;
   text-decoration: none;
+  font-size: 20px;
 }
 .link:hover {
   color: white;
@@ -44,7 +50,7 @@ nav {
   align-items: flex-end;
 }
 .intro {
-  margin: 10px 50px 10px 50px;
+  margin: 60px 50px 60px 50px;
   padding: 20px 30px 20px 30px;
   display: flex;
   flex-direction: row;
@@ -65,26 +71,23 @@ nav {
 }
 .projects {
   background-color: rgb(211, 211, 211, 0.3);
-  margin: 20px 50px 20px 50px;
+  margin: 60px 50px 60px 50px;
   padding: 10px 30px 10px 30px;
 }
 .projects-list {
   display: flex;
   flex-direction: column;
-  align-items: center;
-}
-.project {
-  width: 400px;
+  align-items: stretch;
 }
 .publications {
   border: 3px solid #ecc5c4;
-  margin: 20px 50px 20px 50px;
-  padding: 10px;
+  margin: 60px 50px 60px 50px;
+  padding: 10px 30px 10px 30px;
 }
 .experiences {
   background-color: rgb(211, 211, 211, 0.3);
-  margin: 20px 50px 20px 50px;
-  padding: 10px;
+  margin: 60px 50px 60px 50px;
+  padding: 10px 30px 10px 30px;
 }
 .experience-list {
   display: flex;
@@ -96,15 +99,15 @@ nav {
   color: white;
 }
 .experience-img {
-  max-height: 100px
+  height: 150px;
 }
 .experience1 {
   background-color: white;
   min-width: 400px;
   padding: 5px;
-  margin: 20px;
-  display:flex;
-  flex-direction:row;
+  margin: 40px 0px 40px 0px;
+  display: flex;
+  flex-direction: row;
   color: darkgray;
   align-items: center;
   text-align: right;
@@ -112,16 +115,16 @@ nav {
 .experience2 {
   background-color: white;
   padding: 5px;
-  margin: 20px;
-  display:flex;
-  flex-direction:row;
+  margin: 40px;
+  display: flex;
+  flex-direction: row;
   align-items: center;
   color: darkgray;
 }
 .interests {
   border: 3px solid #ecc5c4;
-  margin: 20px 50px 20px 50px;
-  padding: 10px;
+  margin: 60px 50px 60px 50px;
+  padding: 10px 30px 10px 30px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -129,4 +132,19 @@ nav {
 .footer {
   background-color: #ecc5c4;
   padding: 10px 50px 10px 50px;
+}
+
+.project {
+  display: flex;
+  flex-direction: row;
+  padding: 30px 0px 30px 0px;
+}
+
+.project-img {
+  height: 300px;
+  margin: 0px 20px 0px 20px;
+}
+
+.project-text2 {
+  text-align: right;
 }

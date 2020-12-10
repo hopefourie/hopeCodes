@@ -3,7 +3,12 @@ import React from 'react';
 export default function Intro() {
   return (
     <div className="component">
-      <div className="intro">
+      <div
+        className="intro"
+        data-aos="fade-up"
+        data-aos-duration="2000"
+        data-aos-once="true"
+      >
         <div className="intro-text">
           <h2>Hello! I'm Hope Fourie, a full stack software engineer.</h2>
           <p>

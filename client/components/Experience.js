@@ -3,39 +3,64 @@ import React from 'react';
 export default function Experience() {
   return (
     <div className="component">
-      <div className="experiences">
+      <div
+        className="experiences"
+        data-aos="fade-up"
+        data-aos-duration="2000"
+        data-aos-once="true"
+      >
         <h2>Experience</h2>
         <div className="experience-list">
-          <div className="experience1">
+          <div
+            className="experience1"
+            data-aos="fade-up"
+            data-aos-duration="2000"
+            data-aos-once="true"
+          >
             <div className="experience-text">
               <h3>Full Stack Engineer In-Training</h3>
-              <h4>Grace Hopper Program at Fullstack Academy</h4>
-              <p className="experience-dates">Sept 2020-Dec 2020</p>
+              <p>Grace Hopper Program at Fullstack Academy</p>
+              <h4 className="exerience-dates">Sept 2020-Dec 2020</h4>
             </div>
-            <img className="experience-img" src="./graceHopper.jpg"/>
+            <img className="experience-img" src="./graceHopper.jpg" />
           </div>
-          <div className="experience2">
-            <img className="experience-img" src="./nbc.png"/>
+          <div
+            className="experience2"
+            data-aos="fade-up"
+            data-aos-duration="2000"
+            data-aos-once="true"
+          >
+            <img className="experience-img" src="./york.png" />
             <div className="experience-text">
               <h3>Costume Designer</h3>
-              <h4>Dating (York Avenue Productions)</h4>
-              <p className="experience-dates">Oct 2019-Nov 2019</p>
+              <p>Dating (York Avenue Productions)</p>
+              <h4 className="experience-dates">Oct 2019-Nov 2019</h4>
             </div>
           </div>
-          <div className="experience1">
+          <div
+            className="experience1"
+            data-aos="fade-up"
+            data-aos-duration="2000"
+            data-aos-once="true"
+          >
             <div className="experience-text">
               <h3>Costume Production Assistant</h3>
-              <h4>Tommy (CBS)</h4>
-              <p className="experience-dates">Aug 2019-Jan 2020</p>
+              <p>Tommy (CBS)</p>
+              <h4 className="experience-dates">Aug 2019-Jan 2020</h4>
             </div>
-            <img className="experience-img" src="./cbs.png"/>
+            <img className="experience-img" src="./cbs.png" />
           </div>
-          <div className="experience2">
-            <img className="experience-img" src="./wesleyan.png"/>
+          <div
+            className="experience2"
+            data-aos="fade-up"
+            data-aos-duration="2000"
+            data-aos-once="true"
+          >
+            <img className="experience-img" src="./wesleyan.png" />
             <div className="experience-text">
               <h3>Costume Shop Supervisor</h3>
-              <h4>Wesleyan University</h4>
-              <p className="experience-dates">Sept 2015-May 2019</p>
+              <p>Wesleyan University</p>
+              <h4 className="experience-dates">Sept 2015-May 2019</h4>
             </div>
           </div>
         </div>
