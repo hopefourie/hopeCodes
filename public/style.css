@@ -24,6 +24,19 @@ h3 {
 p {
   font-size: 16px;
 }
+a:hover {
+  color: rgb(118, 118, 118);
+  transform: scale(1.2);
+  border-color: rgb(118, 118, 118);
+}
+.article {
+  color: black;
+  font-size: 20px;
+}
+.article:hover {
+  color: #ecc5c4;
+  transform: scale(1.2);
+}
 .link {
   color: black;
   text-decoration: none;
@@ -32,6 +45,7 @@ p {
 .link:hover {
   color: white;
   text-decoration: none;
+  transform: scale(1.2);
 }
 .component {
   margin: 0px 100px 0px 100px;
@@ -139,12 +153,56 @@ nav {
   flex-direction: row;
   padding: 30px 0px 30px 0px;
 }
+.projects h3 {
+  margin-top: 0px;
+}
 
 .project-img {
   height: 300px;
   margin: 0px 20px 0px 20px;
 }
 
+.project-text-buttons {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
 .project-text2 {
   text-align: right;
+}
+
+.footer {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+  padding: 60px 200px 60px 200px;
+}
+.footer a {
+  color: rgb(118, 118, 118);
+}
+.footer a:hover {
+  color: white;
+}
+
+.footer i {
+  font-size: 60px;
+}
+
+.buttons {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.button {
+  text-decoration: none;
+  color: #ecc5c4;
+  border-radius: 5px;
+  border: 3px solid #ecc5c4;
+  font-size: 15px;
+  padding: 5px 10px 5px 10px;
+  margin: 0px 10px 0px 10px;
 }
