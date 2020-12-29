@@ -1,54 +1,34 @@
-const { green, red } = require('chalk');
-const { db, User, Post } = require('./server/db');
+const { db, Experience, Project } = require('./server/db');
 
-const seedUsers = [
+const seedExperiences = [
   {
-    email: 'john@john.com',
-    userName: 'john',
-  },
-  {
-    email: 'sarah@sarah.com',
-    userName: 'sarah',
-  },
-  {
-    email: 'nicky@nicky.com',
-    userName: 'nicky',
+    title: 'Costume Designer',
+    company: 'Dating (York Avenue Productions)',
+    description: 'November 2019',
   },
 ];
 
-const seedPosts = [
+const seedProjects = [
   {
-    title: 'Chocolate Chip Cookies',
-    content: 'They are so delicious. I could eat them everyday.',
-    userId: 1,
-  },
-  {
-    title: 'Oatmeal Cookies',
-    content: 'They are so delicious. The oats add a nice texture.',
-    userId: 1,
-  },
-  {
-    title: 'Sugar Cookies',
-    content: 'They are so delicious, but sometimes to sweet for me.',
-    userId: 2,
-  },
-  {
-    title: 'Snickerdoodle Cookies',
-    content: 'They are so delicious, they taste like christmas.',
-    userId: 3,
+    title: "Newt's Quest",
+    description: 'Venture through a magical wood to get your gnome hat back',
+    deployedUrl: 'https://newts-quest.herokuapp.com/',
+    githubUrl: 'https://github.com/hopefourie/Newts-Quest',
   },
 ];
 
 const seed = async () => {
   try {
     await db.sync({ force: true });
-    await Promise.all(seedUsers.map((user) => User.create(user)));
-    await Promise.all(seedPosts.map((post) => Post.create(post)));
-    console.log(green('Database successfully seeded 🍪'));
+    await Promise.all(
+      seedExperiences.map((experience) => Experience.create(experience))
+    );
+    await Promise.all(seedProjects.map((project) => Project.create(project)));
+    console.log('Database successfully seeded 🍪');
     db.close();
     // seed your database here!
   } catch (err) {
-    console.log(red(err));
+    console.log(err);
   }
 };
 
@@ -59,11 +39,11 @@ module.exports = seed;
 if (require.main === module) {
   seed()
     .then(() => {
-      console.log(green('Seeding success!'));
+      console.log('Seeding success!');
       db.close();
     })
     .catch((err) => {
-      console.error(red('Oh noes! Something went wrong!'));
+      console.error('Oh noes! Something went wrong!');
       console.error(err);
       db.close();
     });
