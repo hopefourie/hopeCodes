@@ -51,7 +51,7 @@ export default function Projects() {
             </div>
           </div>
           <div
-            className="project"
+            className="project2"
             data-aos="fade-up"
             data-aos-duration="2000"
             data-aos-once="true"
