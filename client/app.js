@@ -2,8 +2,6 @@ import '../public/style.css';
 import React, { Component } from 'react';
 import ReactDOM from 'react-dom';
 import { HashRouter, Route } from 'react-router-dom';
-// import store from './store';
-// import { Provider } from 'react-redux';
 import Publications from './components/Publications';
 import Experience from './components/Experience';
 import Intro from './components/Intro';
@@ -29,11 +27,9 @@ class App extends Component {
 }
 
 ReactDOM.render(
-  // <Provider /*store={store}*/>
   <HashRouter>
     <App />
   </HashRouter>,
-  // </Provider>,
   document.getElementById('app')
 );
 
